@@ -1,0 +1,59 @@
+@use 'sass/colors' as *;
+@use 'sass/typography' as *;
+@use 'sass/layout' as *;
+@use 'sass/animation' as *;
+@use 'sass/spacing' as *;
+@use 'sass/buttons' as *;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    //cursor: none;
+}
+
+body{
+    width: 100%;
+    background-color: $white-normal;
+
+    &::-webkit-scrollbar{
+        padding-right: 4px;
+        width: 20px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;        /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb{
+        border-radius: 0px;
+        background: $black-lighten;
+        border: 6px solid $white-normal;
+    }
+}
+
+.border{
+    border: 1px solid red;
+}
+
+.border-radius{
+  border-radius: 4px;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.relative{
+    position: relative;
+}
+
+svg,img{
+  width: 100%;
+  //height: auto;
+}
