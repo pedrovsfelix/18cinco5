@@ -1,19 +1,37 @@
 @use 'sass/colors' as *;
-@use 'sass/typography' as *;
 @use 'sass/layout' as *;
+@use 'sass/typography' as *;
+@use 'sass/menu' as *;
 @use 'sass/animation' as *;
 @use 'sass/spacing' as *;
+@use 'sass/footer' as *;
 @use 'sass/buttons' as *;
+@use 'sass/responsive' as *;
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 html{
-    scroll-behavior: smooth;
-    //cursor: none;
+    scroll-behavior: auto;
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+[data-barba="container"] {
+    padding-top: 96px;
+    min-height: 70vh;
 }
 
 body{

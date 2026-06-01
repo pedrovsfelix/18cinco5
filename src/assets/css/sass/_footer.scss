@@ -1,0 +1,49 @@
+@use '../sass/responsive' as *;
+@use '../sass/colors' as *;
+@use '../sass/spacing' as *;
+@use '../sass/typography' as *;
+
+.site-footer {
+  padding: $gap-6 0 $gap-4;
+  border-top: 1px solid $gray-7;
+  background-color: $white-normal;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: $gap-4;
+  }
+
+  &__logo img {
+    width: auto;
+    max-width: 160px;
+    height: auto;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-3;
+
+    a {
+      color: $black-light;
+      text-decoration: none;
+      @include typeface-2(p4, desktop);
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $red-normal;
+      }
+    }
+  }
+
+  &__copy {
+    width: 100%;
+    margin: 0;
+    color: $gray-2;
+    @include typeface-2(p5, desktop);
+  }
+}

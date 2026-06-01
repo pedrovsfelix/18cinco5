@@ -1,61 +1,7 @@
+@use '../sass/colors' as *;
+@use '../sass/responsive' as *;
+
 // Layout of project
-
-// Container-devices
-$container-xl: 1440px;
-$container-l: 1240px;
-$container-m: 960px;
-$container-s: 620px;
-$gutter: 20px;
-
-// Mixin of media-queries
-@mixin responsive($device) {
-
-  @if $device == xl {
-    // For resolutions upper 1440px
-    @media screen and (min-width: $container-xl) {
-      @content;
-    }
-  } 
-
-  @else if $device == ul {
-    // For resolutions upper 960px
-    @media screen and (min-width: $container-m) {
-      @content;
-    }
-  } 
-  
-  @else if $device == l {
-    // For resolutions between 1140px and 1440px
-    @media screen and (max-width: $container-xl) and (min-width: $container-l) {
-      @content;
-    }
-  } 
-  
-  
-  @else if $device == m {
-    // For resolutions between 960px and 1140px
-    @media screen and (max-width: $container-l) and (min-width: $container-s) {
-      @content;
-    }
-  } 
-  
-  
-  @else if $device == s {
-    // For resolutions less than 960px
-    @media screen and (max-width: $container-m) {
-      @content;
-    }
-  } 
-  
-  
-  @else if $device == xs {
-    // For resolutions less than 540px
-    @media screen and (max-width: $container-s) {
-      @content;
-    }
-  }
-}
-
 
 @function grid($col, $total: 12){
   @return calc($col / $total) * 100%;
@@ -737,4 +683,58 @@ canvas{
     padding-top: 0;
     padding-bottom: 0;
   }
+}
+
+////////////////////
+/// 
+/// 
+////////////////////
+
+.screen-loading {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background: $white-dark;
+  pointer-events: all;
+
+  &__logo {
+    --reveal: 0%;
+    width: min(90vw, 720px);
+    -webkit-mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 calc(var(--reveal) - 8%),
+      rgba(0, 0, 0, 0.22) var(--reveal),
+      rgba(0, 0, 0, 0.12) 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      #000 0%,
+      #000 calc(var(--reveal) - 8%),
+      rgba(0, 0, 0, 0.22) var(--reveal),
+      rgba(0, 0, 0, 0.12) 100%
+    );
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &.is-complete {
+    pointer-events: none;
+  }
+}
+
+.hero {
+  background-image: url("../../../../src/assets/img/ui/herobg.png");
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }

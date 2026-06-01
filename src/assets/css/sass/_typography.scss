@@ -1,3 +1,6 @@
+@use '../sass/colors' as *;
+@use '../sass/responsive' as *;
+
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 
 @mixin typeface-1($size, $device: desktop) {

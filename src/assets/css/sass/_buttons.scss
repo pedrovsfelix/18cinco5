@@ -1,0 +1,11 @@
+@use '../sass/colors' as *;
+
+.btn {
+    display: inline-block;
+    color: $white-normal;
+    transition: .6s ease;
+    padding: 28px 26px;
+    border-radius: 4px;
+    text-align: center;
+    border: 0;
+}
