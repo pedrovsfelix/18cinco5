@@ -738,3 +738,15 @@ canvas{
   object-fit: cover;
   background-repeat: no-repeat;
 }
+
+
+.card-s {
+  padding: 100px 82px;
+  border-radius: 26px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}

@@ -1,11 +1,130 @@
+@use '../sass/responsive' as *;
 @use '../sass/colors' as *;
+@use '../sass/typography' as *;
 
 .btn {
-    display: inline-block;
-    color: $white-normal;
-    transition: .6s ease;
-    padding: 28px 26px;
-    border-radius: 4px;
-    text-align: center;
-    border: 0;
+  display: inline-block;
+  color: $white-light;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  transition: .6s ease;
+  padding: 18px 80px 18px 20px;
+  text-align: left;
+  text-transform: uppercase;
+
+  position: relative;
+  
+  background-color: rgba(221, 227, 237, 0.02);
+  backdrop-filter: blur(12px);
+  border-radius: 52px;
+  border: 3px solid rgba(255,255,255,0.15);
+
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.2);
+
+  position: relative;
+  transition: .7s ease;
+
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 84%;
+
+    border-radius: 100%;
+
+    width: 54px;
+    height: 54px;
+
+    transform: translate(-00%, -50%);
+    background-color: rgba(218, 218, 218, 1);
+    border: 3px solid rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.40));
+
+    background-image: url('../../../../src/assets/img/svg/arrow.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    transition: 1s ease;
+  }
+
+  &:hover{
+    &::before{
+      transform: translate(-00%, -50%) rotate(900deg);
+      top: 50%;
+      right: 84%;
+    }
+
+    padding: 18px 80px 18px 20px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 72px 0 rgba(0, 0, 0, 0.6);
+
+  }
+}
+
+.btn-dark {
+  display: inline-block;
+  color: $white-light;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+  transition: .6s ease;
+  padding: 18px 80px 18px 20px;
+  text-align: left;
+  text-transform: uppercase;
+
+  position: relative;
+  
+  background-color: $black-darken;
+  border-radius: 52px;
+  border: 3px solid rgba(255,255,255,0.15);
+
+  box-shadow: 0 4px 32px 0 rgba(0, 0, 0, 0.2);
+
+  position: relative;
+  transition: .7s ease;
+
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 84%;
+
+    border-radius: 100%;
+
+    width: 54px;
+    height: 54px;
+
+    transform: translate(-00%, -50%);
+    background-color: rgba(218, 218, 218, 1);
+    border: 3px solid rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.40));
+
+    background-image: url('../../../../src/assets/img/svg/arrow.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+    transition: 1s ease;
+  }
+
+  &:hover{
+    &::before{
+      transform: translate(-00%, -50%) rotate(900deg);
+      top: 50%;
+      right: 84%;
+    }
+
+    background-color: $black-light;
+    padding: 18px 80px 18px 20px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 72px 0 rgba(0, 0, 0, 0.6);
+  }
 }

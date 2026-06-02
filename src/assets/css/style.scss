@@ -59,6 +59,10 @@ body{
     border: 1px solid red;
 }
 
+.bg-red {
+    background: red;
+}
+
 .border-radius{
   border-radius: 4px;
 }
@@ -74,4 +78,12 @@ body{
 svg,img{
   width: 100%;
   //height: auto;
+}
+
+.border-l {
+    border-left: 1px solid #000;
+}
+
+.white {
+    color: $white-dark;
 }

@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="src/assets/css/style.css" />
   </head>
   <body class="relative">
-    <header>
-      <nav>
+    <header class="site-header">
+      <nav class="">
         <a href="#">
           <div>
             <img src="src/assets/img/ui/logo.png" alt="" srcset="" />
           </div>
         </a>
 
-        <div>
-          <ul class="uppercase flex-start-row gap-1">
+        <div class="">
+          <ul class="uppercase flex-start-row">
             <li><a href="#">QUEM SOMOS</a></li>
             <li><a href="#">O QUE FAZEMOS</a></li>
             <li><a href="#">pORTFÓLIO</a></li>
@@ -29,70 +29,69 @@
 
     <main>
       <!-- HERO -->
-      <section class="hero h-100" id="hero">
-        <div class="grid-1 disappear">
-
-        </div>
-        <div class="grid-4">
-          <h1 class="h5">Revelando hospitalidade através do posicionamento</h1>
-          <p>
+      <section class="hero h-100 flex-center" id="hero">
+        <div class="grid-1 disappear"></div>
+        <div class="grid-4 flex-column">
+          <h1 class="h5 white">
+            Revelando hospitalidade através do posicionamento
+          </h1>
+          <p class="mt-4 white">
             Somos uma agência de comunicação e marketing digital, especializada
             em criar soluções criativas e inovadoras para nossos clientes.
           </p>
+
+          <a href="#" class="btn mt-2"> faça seu orçamento </a>
         </div>
 
-        <div class="grid-5">
-
-        </div>
-        <div class="grid-1 disappear">
-          
-        </div>
+        <div class="grid-5"></div>
+        <div class="grid-1 disappear"></div>
       </section>
 
       <!-- CAROUSEL -->
       <!-- <section></section> -->
 
       <!-- WE ARE -->
-      <section>
+      <section class="container">
         <div class="grid-3">
-
           <div>
-            <h4 class="uppercase">
-              nós somos
-            </h4>
+            <h4 class="uppercase">nós somos</h4>
           </div>
-
         </div>
 
-        <div class="grid-6">
-
+        <div class="grid-6 center">
           <div>
-            <img src="src/assets/img/ui/joao.png" alt="Nós somos">
+            <img
+              class="w-50"
+              src="src/assets/img/ui/joao.png"
+              alt="Nós somos"
+            />
           </div>
-          
         </div>
 
         <div class="grid-3">
           <p>
-            Um olhar que se transforma em posicionamento claro e ação estratégica. Cada detalhe é revelado com precisão, alinhado à essência do cliente, para despertar desejo, gerar conexão e conquistar preferência. Estamos lado a lado para fortalecer linguagem, estratégia e estética, construindo um Branding consistente, forte e memorável.
+            Um olhar que se transforma em posicionamento claro e ação
+            estratégica. Cada detalhe é revelado com precisão, alinhado à
+            essência do cliente, para despertar desejo, gerar conexão e
+            conquistar preferência. Estamos lado a lado para fortalecer
+            linguagem, estratégia e estética, construindo um Branding
+            consistente, forte e memorável.
           </p>
         </div>
       </section>
 
       <!-- OUR SERVICES -->
-      <section class="flex-column">
-        <div>
-          <div class="grid-8">
-            <h4 class="uppercase">
-              exclusivo para hotelaria e gastronomia
-            </h4>
+      <section class="container">
+        <div class="row">
+          <div class="grid-8 border">
+            <h4 class="uppercase">exclusivo para hotelaria e gastronomia</h4>
           </div>
 
           <div class="grid-4 disappear"></div>
         </div>
 
-        <div>
-          <div class="grid-4 disappear"></div>
+        <div class="row">
+          <div class="grid-4 disappear bg-red"></div>
 
           <div class="grid-8">
             <h4 class="uppercase">
@@ -101,31 +100,103 @@
           </div>
         </div>
 
-        <div>
-          <div class="grid-3">
-            <h6>
-              Branding na Prática
-            </h6>
+        <div class="row">
+          <div class="grid-3 border-l">
+            <div class="flex-column pl-4">
+              <p class="">001</p>
+              <img class="w-25" src="./src/assets/img/svg/orings.svg" />
+              <h6 class="h7">Branding na Prática</h6>
+              <p>Gestão de posicionamento no dia a dia.</p>
+            </div>
           </div>
-          <div class="grid-3">
-            <h6>
-              Marketing de Influenciadores
-            </h6>
+          <div class="grid-3 border-l">
+            <div class="flex-column pl-4">
+              <p>002</p>
+              <img class="w-25" src="./src/assets/img/svg/sun.svg" />
+              <h6 class="h7">Marketing de Influenciadores</h6>
+              <p>Mapear, contratar e roteirizar influenciadores.</p>
+            </div>
           </div>
-          <div class="grid-3">
-            <h6>
-              Captação e Gestão de redes
-            </h6>
+          <div class="grid-3 border-l">
+            <div class="flex-column pl-4">
+              <p>003</p>
+              <img class="w-25" src="./src/assets/img/svg/geometry.svg" />
+              <h6 class="h7">Captação e Gestão de redes</h6>
+              <p>Olhar refinado e planejamento estratégico.</p>
+            </div>
           </div>
-          <div class="grid-3">
-            <h6>
-              Identidade Visual
-            </h6>
+          <div class="grid-3 border-l">
+            <div class="flex-column pl-4">
+              <p>004</p>
+              <img class="w-25" src="./src/assets/img/svg/square.svg" />
+              <h6 class="h7">Identidade Visual</h6>
+              <p>Criação estética, gráfica e sinalização</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card-s grid-4 bg-tramice">
+            <img class="w-100" src="./src/assets/img/svg/tramice.svg" alt="" />
+          </div>
+
+          <div class="card-s grid-4 bg-hcm">
+            <img class="w-100" src="./src/assets/img/svg/hcm.svg" alt="" />
+          </div>
+
+          <div class="card-s grid-4 bg-holanda">
+            <img src="./src/assets/img/svg/holanda.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card-s grid-4 bg-arboreo">
+            <img class="w-100" src="./src/assets/img/svg/arboreo.svg" alt="" />
+          </div>
+
+          <div class="card-s grid-8 bg-mero">
+            <h3>Desenvolvemos projetos para marcas que fazem a diferença.</h3>
+
+            <p class="mt-2">
+              Agimos lado a lado dos nossos clientes, desenvolvendo projetos que
+              expressam autenticidade e fortalecem as marcas com propósito e
+              consistência.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card-s grid-4 bg-mero">
+            <img class="w-100" src="./src/assets/img/svg/mero.svg" alt="" />
+          </div>
+
+          <div class="card-s grid-4 bg-botteca">
+            <img class="w-100" src="./src/assets/img/svg/botteca.svg" alt="" />
+          </div>
+
+          <div class="card-s grid-4 bg-savitar">
+            <img src="./src/assets/img/svg/savitar.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card-s grid-8 bg-mero">
+            <h3>Nos apresente seu projeto.</h3>
+
+            <p class="mt-3">
+              Nossa equipe está pronta para entender os desafios<br />
+              da sua marca e oferecer as melhores soluções, unindo<br />
+              criatividade e eficiência. Agende uma conversa.
+            </p>
+
+            <a href="#" class="btn-dark mt-4">vamos conversar</a>
+          </div>
+
+          <div class="card-s grid-4 bg-corais">
+            <img class="w-100" src="./src/assets/img/svg/corais.svg" alt="" />
           </div>
         </div>
       </section>
-
-
     </main>
 
     <footer></footer>
