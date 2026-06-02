@@ -2358,6 +2358,67 @@ nav {
   color: #FFFFFF;
 }
 
+.logo-loader {
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-base path {
+  fill: #C9C9C9;
+}
+
+.logo-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: inset(0 100% 0 0);
+  animation: revealLogo 4s ease forwards;
+}
+
+.logo-fill path {
+  fill: #0A0A0A;
+}
+
+@keyframes revealLogo {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+.bar-loading {
+  width: 100%;
+  height: 3px;
+  background-color: #C9C9C9;
+  position: relative;
+}
+.bar-loading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #000000;
+  animation: barLoading 4s ease forwards;
+}
+
+@keyframes barLoading {
+  0%, 10% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 .site-footer {
   padding: 64px 0 32px;
   border-top: 1px solid #D8D8D8;

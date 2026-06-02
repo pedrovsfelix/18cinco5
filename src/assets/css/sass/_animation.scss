@@ -1,0 +1,66 @@
+@use '../sass/colors' as *;
+
+.logo-loader {
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.logo-base path {
+    fill: $gray-6;
+}
+
+.logo-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: inset(0 100% 0 0);
+    animation: revealLogo 4s ease forwards;
+}
+
+.logo-fill path {
+    fill: $black-darken;
+}
+
+@keyframes revealLogo {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+.bar-loading{
+    width: 100%;
+    height: 3px;
+    background-color: $gray-6;
+    position: relative;
+
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 00%;
+        height: 100%;
+        background-color: $black-dark;
+        animation: barLoading 4s ease forwards;
+    }
+}
+
+@keyframes barLoading {
+    0%,10%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
