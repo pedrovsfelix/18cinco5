@@ -2,6 +2,7 @@
 @use '../sass/responsive' as *;
 
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 @mixin typeface-1($size, $device: desktop) {
 
@@ -110,7 +111,7 @@
 }
 
 @mixin typeface-2($size: p2, $device: desktop) {
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
 
   @if $size == p1 and $device == desktop {

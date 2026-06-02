@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 .bg-tramice {
   background-color: #6F263D;
 }
@@ -1082,7 +1083,7 @@ h6 {
 p {
   letter-spacing: 0px;
   color: #7E7E7E;
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 18px;
   line-height: 150%;
@@ -1090,7 +1091,7 @@ p {
 }
 @media screen and (max-width: 960px) {
   p {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 16px;
     line-height: 150%;
@@ -1099,7 +1100,7 @@ p {
 }
 @media screen and (max-width: 620px) {
   p {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 14px;
     line-height: 150%;
@@ -1113,7 +1114,7 @@ p {
 }
 
 .p1 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 28px;
   line-height: 120%;
@@ -1121,7 +1122,7 @@ p {
 }
 @media screen and (max-width: 960px) {
   .p1 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 24px;
     line-height: 130%;
@@ -1130,7 +1131,7 @@ p {
 }
 @media screen and (max-width: 620px) {
   .p1 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 20px;
     line-height: 130%;
@@ -1139,7 +1140,7 @@ p {
 }
 
 .p2 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 20px;
   line-height: 140%;
@@ -1147,7 +1148,7 @@ p {
 }
 @media screen and (max-width: 960px) {
   .p2 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 18px;
     line-height: 140%;
@@ -1156,7 +1157,7 @@ p {
 }
 
 .p3 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 18px;
   line-height: 150%;
@@ -1164,7 +1165,7 @@ p {
 }
 @media screen and (max-width: 960px) {
   .p3 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 16px;
     line-height: 150%;
@@ -1173,7 +1174,7 @@ p {
 }
 
 .p4 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 16px;
   line-height: 150%;
@@ -1181,7 +1182,7 @@ p {
 }
 @media screen and (max-width: 960px) {
   .p4 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 14px;
     line-height: 150%;
@@ -1190,7 +1191,7 @@ p {
 }
 
 .p5 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 13px;
   line-height: 150%;
@@ -1198,7 +1199,7 @@ p {
 }
 @media screen and (max-width: 960px) {
   .p5 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 13px;
     line-height: 150%;
@@ -1246,7 +1247,7 @@ span {
 
 strong {
   color: #000000;
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 20px;
   line-height: 140%;
@@ -1254,7 +1255,7 @@ strong {
 }
 @media screen and (max-width: 960px) {
   strong {
-    font-family: "Outfit", sans-serif;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-size: 18px;
     line-height: 140%;
@@ -2054,7 +2055,7 @@ nav {
   width: 100%;
   padding: 24px 24px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   overflow: hidden;
@@ -2310,18 +2311,12 @@ nav {
   }
 }
 
-.site-header .nav-link {
-  color: #1A1A1A;
-}
-.site-header .nav-link::after {
-  background-color: #1A1A1A;
-}
-
 .nav-link {
   display: inline-block;
   color: #D9D9D9;
   position: relative;
   transition: 0.7s ease;
+  font-family: "Roboto Mono", monospace;
   padding: 8px 16px;
   font-family: "Helvetica Neue", sans-serif;
   font-optical-sizing: auto;
@@ -2389,7 +2384,7 @@ nav {
 .site-footer__list a {
   color: #1A1A1A;
   text-decoration: none;
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 16px;
   line-height: 150%;
@@ -2403,7 +2398,7 @@ nav {
   width: 100%;
   margin: 0;
   color: #6B6B6B;
-  font-family: "Outfit", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-size: 13px;
   line-height: 150%;
