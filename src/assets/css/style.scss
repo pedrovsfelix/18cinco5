@@ -6,6 +6,7 @@
 @use 'sass/spacing' as *;
 @use 'sass/footer' as *;
 @use 'sass/buttons' as *;
+@use 'sass/carousel' as *;
 @use 'sass/responsive' as *;
 
 *{
@@ -18,24 +19,14 @@
 
 html{
     scroll-behavior: auto;
-}
-
-html.lenis,
-html.lenis body {
-    height: auto;
-}
-
-.lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-}
-
-[data-barba="container"] {
-    padding-top: 96px;
-    min-height: 70vh;
+    max-width: 100%;
+    overflow-x: clip;
 }
 
 body{
     width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
     background-color: $white-normal;
 
     &::-webkit-scrollbar{
@@ -53,6 +44,20 @@ body{
         background: $black-lighten;
         border: 6px solid $white-normal;
     }
+}
+
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+[data-barba="container"] {
+    padding-top: 96px;
+    min-height: 70vh;
 }
 
 .border{
