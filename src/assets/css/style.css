@@ -2072,6 +2072,29 @@ nav {
     width: 100%;
   }
 }
+.fill-text {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+.fill-text > span {
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-color: #55565A;
+  background-image: linear-gradient(135deg, #0b0c0f 50%, #0b0c0f 60%);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 0% 200%;
+  color: transparent;
+  display: inline;
+  will-change: background-size;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fill-text > span {
+    background-size: 200% 200%;
+  }
+}
 .site-footer {
   padding: 64px 0 32px;
   border-top: 1px solid #D8D8D8;

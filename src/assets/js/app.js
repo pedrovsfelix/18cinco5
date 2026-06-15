@@ -144,25 +144,41 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.ticker.lagSmoothing(0);
 
   /*--=========== TIMELINE LOADING E HERO ============- */
-  var tl1 = gsap.timeline();
-  tl1
-    .to(".screen-loading", {
-      duration: 2,
-      opacity: 0,
-      delay: 4,
-      ease: "power4.out",
-    })
-    .from(
-      ".container-hero",
-      {
-        duration: 2,
-        opacity: 0,
-        x: -100,
-        stagger: { each: 0.3 },
-        ease: "power4.out",
+  // var tl1 = gsap.timeline();
+  // tl1
+  //   .to(".screen-loading", {
+  //     duration: 2,
+  //     opacity: 0,
+  //     delay: 4,
+  //     ease: "power4.out",
+  //   })
+  //   .from(
+  //     ".container-hero",
+  //     {
+  //       duration: 2,
+  //       opacity: 0,
+  //       x: -100,
+  //       stagger: { each: 0.3 },
+  //       ease: "power4.out",
+  //     },
+  //     "-=1.9",
+  //   );
+
+  /*--=========== ANIMAÇÃO TEXTO INTRODUÇÃO ============- */
+  const targets = document.querySelectorAll(".js-fill > span");
+
+  targets.forEach((target) => {
+    gsap.to(target, {
+      backgroundSize: "200% 200%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: target.closest(".js-fill"),
+        start: "top 80%",
+        end: "bottom 35%",
+        scrub: 2,
       },
-      "-=1.9",
-    );
+    });
+  });
 
   /*--=========== ANIMATION TEXTS PRESENTATION ============- */
   gsap.from(".text-presentation-design", {
