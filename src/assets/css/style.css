@@ -892,6 +892,22 @@ canvas {
      object-fit: cover;
 }
 
+.card-m {
+  padding: 58px 36px;
+  border-radius: 12px;
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.border-m {
+  border-radius: 12px;
+}
+
 .h0 {
   font-family: "Helvetica Neue", sans-serif;
   font-optical-sizing: auto;

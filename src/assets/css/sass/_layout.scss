@@ -750,3 +750,18 @@ canvas{
   align-items: center;
   object-fit: cover;
 }
+
+.card-m {
+  padding: 58px 36px;
+  border-radius: 12px;
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.border-m {
+  border-radius: 12px;
+}
