@@ -111,7 +111,7 @@
 }
 
 @mixin typeface-2($size: p2, $device: desktop) {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Helvetica Neue", sans-serif;
   font-optical-sizing: auto;
 
   @if $size == p1 and $device == desktop {
