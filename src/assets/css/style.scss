@@ -31,8 +31,8 @@ body{
     background-color: $white-normal;
 
     &::-webkit-scrollbar{
-        padding-right: 4px;
-        width: 20px;
+        padding-right: 0px;
+        width: 5px;
         background: transparent;
     }
 
@@ -43,7 +43,7 @@ body{
     &::-webkit-scrollbar-thumb{
         border-radius: 0px;
         background: $black-lighten;
-        border: 6px solid $white-normal;
+        border: 0px solid $white-normal;
     }
 }
 
