@@ -54,7 +54,7 @@
 
   &:hover{
     &::before{
-      transform: translate(-00%, -50%) rotate(900deg);
+      transform: translate(-00%, -50%) rotate(360deg);
       top: 50%;
       right: 84%;
     }
@@ -117,7 +117,7 @@
 
   &:hover{
     &::before{
-      transform: translate(-00%, -50%) rotate(550deg);
+      transform: translate(-00%, -50%) rotate(360deg);
       top: 50%;
       right: 84%;
     }

@@ -41,18 +41,17 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 168px;
     margin: 0 auto;
 
     @include responsive(s) {
-      max-width: 128px;
+      max-width: 56px;
     }
 
     img {
       width: 100%;
       max-width: 100%;
       height: auto;
-      max-height: 56px;
+      max-height: 64px;
       object-fit: contain;
       display: block;
       filter: brightness(0) saturate(100%);

@@ -432,12 +432,18 @@ canvas{
   height: 100%;
 }
 
+.flex-baseline-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-direction: row;
+}
+
 .flex-start-row {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-
 }
 
 .flex-end-row {
@@ -550,6 +556,15 @@ canvas{
 }
 .w-50 {
   width: 50%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-35 {
+  width: 35%;
+}
+.w-30 {
+  width: 30%;
 }
 .w-25 {
   width: 25%;
@@ -783,6 +798,9 @@ canvas{
   background-repeat: no-repeat;
 }
 
+.card-bp {
+  
+}
 
 .card-s {
   padding: 6rem 5rem;

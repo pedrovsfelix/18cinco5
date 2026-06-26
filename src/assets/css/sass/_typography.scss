@@ -116,60 +116,60 @@
 
   @if $size == p1 and $device == desktop {
     font-size: 28px;
-    line-height: 120%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } @else if $size == p1 and $device == mobile {
     font-size: 24px;
-    line-height: 130%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } @else if $size == p1 and $device == smallmobile {
     font-size: 20px;
-    line-height: 130%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } 
   
   @else if $size == p2 and $device == desktop {
     font-size: 20px;
-    line-height: 140%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } @else if $size == p2 and $device == mobile {
     font-size: 18px;
-    line-height: 140%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } 
   
   @else if $size == p3 and $device == desktop {
     font-size: 18px;
-    line-height: 150%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } @else if $size == p3 and $device == mobile {
     font-size: 16px;
-    line-height: 150%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } @else if $size == p3 and $device == smallmobile {
     font-size: 14px;
-    line-height: 150%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   }
 
   @else if $size == p4 and $device == desktop {
     font-size: 16px;
-    line-height: 150%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } @else if $size == p4 and $device == mobile {
     font-size: 14px;
-    line-height: 150%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   }
 
   @else if $size == p5 and $device == desktop {
     font-size: 13px;
-    line-height: 150%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   } @else if $size == p5 and $device == mobile {
     font-size: 13px;
-    line-height: 150%;
-    font-weight: 300;
+    line-height: auto;
+    font-style: normal;
   }
 }
 
@@ -258,8 +258,8 @@ h6 {
 }
 
 p {
-  letter-spacing: 0px;
-  color: $gray-3;
+  // letter-spacing: 0px;
+  color: $black-dark;
   @include typeface-2(p3, desktop);
   @include responsive(s) {
     @include typeface-2(p3, mobile);
@@ -322,8 +322,8 @@ p {
 }
 
 .bold {
-  font-weight: bold;
-  color: $white-dark;
+  font-weight: 900;
+  color: $black-dark;
 }
 
 span{

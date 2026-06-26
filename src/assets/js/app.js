@@ -38,7 +38,7 @@ const point3 = document.querySelector(".point-3");
 const point4 = document.querySelector(".point-4");
 const nav = document.querySelector(".nav");
 const menu = document.querySelector(".menu");
-const menu_links = Array.from(document.querySelectorAll(".menu-link"));
+const menu_links = Array.from(document.querySelectorAll(".menu a"));
 const menu_links_icon = Array.from(
   document.querySelectorAll(".menu-link-icon"),
 );
@@ -67,11 +67,6 @@ menu_links.forEach((item) => {
 
     tl_menu.reverse(2);
     menu.classList.remove("active-menu");
-
-    //point1.classList.remove('point-1-active');
-    //point2.classList.remove('point-2-active');
-    //point3.classList.remove('point-3-active');
-    //point4.classList.remove('point-4-active');
   });
 });
 
