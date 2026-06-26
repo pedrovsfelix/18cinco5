@@ -199,7 +199,7 @@ nav{
 
     border-radius:10px;
 
-    background:$white-dark;
+    background: $white-dark;
 
     transform:translateX(-50%);
 
@@ -219,8 +219,19 @@ nav{
   }
 
   &.active-bx{
+    background: black !important;
 
     transform: rotate(180deg);
+
+    .bx::before {
+      content: '';
+      background: black !important;
+    }
+
+    .bx::after {
+      content: '';
+      background: black !important;
+    }
 
     span::before{
       top:50%;
