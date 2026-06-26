@@ -798,6 +798,13 @@ canvas{
   background-repeat: no-repeat;
 }
 
+.scroll-animation {
+  position: absolute;
+  bottom: 120px;
+  left: 96%;
+  transform: translate(0, 100%);
+}
+
 .card-bp {
   
 }
