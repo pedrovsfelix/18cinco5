@@ -913,6 +913,53 @@ canvas {
   transform: translate(0, 100%);
 }
 
+.card-service {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.service-1 {
+  width: 74px;
+  height: 74px;
+  background: url("../img/svg/sun.svg") center/contain no-repeat;
+  transition: ease 0.1s;
+}
+.service-1:hover {
+  background: url("../img/gif/sun.gif") center/contain no-repeat;
+}
+
+.service-2 {
+  width: 74px;
+  height: 74px;
+  background: url("../img/svg/orings.svg") center/contain no-repeat;
+  transition: ease 0.1s;
+}
+.service-2:hover {
+  background: url("../img/gif/orings.gif") center/contain no-repeat;
+}
+
+.service-3 {
+  width: 74px;
+  height: 74px;
+  background: url("../img/svg/geometry.svg") center/contain no-repeat;
+  transition: ease 0.1s;
+}
+.service-3:hover {
+  background: url("../img/gif/geometry.gif") center/contain no-repeat;
+}
+
+.service-4 {
+  width: 74px;
+  height: 74px;
+  background: url("../img/svg/square.svg") center/contain no-repeat;
+  transition: ease 0.1s;
+}
+.service-4:hover {
+  background: url("../img/gif/square.gif") center/contain no-repeat;
+}
+
 .card-s {
   padding: 6rem 5rem;
   border-radius: 1.6rem;
@@ -1058,7 +1105,7 @@ canvas {
   font-optical-sizing: auto;
   font-size: 128px;
   line-height: 100%;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media screen and (max-width: 960px) {
   .h0 {
@@ -1066,7 +1113,7 @@ canvas {
     font-optical-sizing: auto;
     font-size: 80px;
     line-height: 100%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 @media screen and (max-width: 620px) {
@@ -1075,7 +1122,7 @@ canvas {
     font-optical-sizing: auto;
     font-size: 64px;
     line-height: 100%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
@@ -1086,7 +1133,7 @@ h1 {
   font-optical-sizing: auto;
   font-size: 72px;
   line-height: 110%;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media screen and (max-width: 960px) {
   h1 {
@@ -1094,7 +1141,7 @@ h1 {
     font-optical-sizing: auto;
     font-size: 56px;
     line-height: 110%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 @media screen and (max-width: 620px) {
@@ -1103,7 +1150,7 @@ h1 {
     font-optical-sizing: auto;
     font-size: 44px;
     line-height: 120%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
@@ -1113,7 +1160,7 @@ h2 {
   font-optical-sizing: auto;
   font-size: 64px;
   line-height: 110%;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media screen and (max-width: 960px) {
   h2 {
@@ -1121,7 +1168,7 @@ h2 {
     font-optical-sizing: auto;
     font-size: 52px;
     line-height: 120%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 @media screen and (max-width: 620px) {
@@ -1130,7 +1177,7 @@ h2 {
     font-optical-sizing: auto;
     font-size: 40px;
     line-height: 120%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
@@ -1167,7 +1214,7 @@ h4 {
   font-optical-sizing: auto;
   font-size: 40px;
   line-height: 120%;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media screen and (max-width: 960px) {
   h4 {
@@ -1175,7 +1222,7 @@ h4 {
     font-optical-sizing: auto;
     font-size: 32px;
     line-height: 130%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 @media screen and (max-width: 620px) {
@@ -1184,7 +1231,7 @@ h4 {
     font-optical-sizing: auto;
     font-size: 24px;
     line-height: 140%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
@@ -1194,7 +1241,7 @@ h5 {
   font-optical-sizing: auto;
   font-size: 28px;
   line-height: 140%;
-  font-weight: 400;
+  font-weight: 700;
 }
 @media screen and (max-width: 960px) {
   h5 {
@@ -1202,7 +1249,7 @@ h5 {
     font-optical-sizing: auto;
     font-size: 24px;
     line-height: 140%;
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
@@ -1212,7 +1259,7 @@ h6 {
   font-optical-sizing: auto;
   font-size: 24px;
   line-height: 150%;
-  font-weight: 400;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   h6 {
@@ -1220,7 +1267,7 @@ h6 {
     font-optical-sizing: auto;
     font-size: 20px;
     line-height: 150%;
-    font-weight: 400;
+    font-weight: 500;
   }
 }
 
@@ -1229,7 +1276,7 @@ h6 {
   font-optical-sizing: auto;
   font-size: 18px;
   line-height: 150%;
-  font-weight: 400;
+  font-weight: 700;
 }
 @media screen and (max-width: 960px) {
   .h7 {
@@ -1237,7 +1284,7 @@ h6 {
     font-optical-sizing: auto;
     font-size: 16px;
     line-height: 150%;
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 
@@ -1393,7 +1440,7 @@ span {
   font-optical-sizing: auto;
   font-size: 72px;
   line-height: 110%;
-  font-weight: 500;
+  font-weight: 700;
 }
 @media screen and (max-width: 960px) {
   .letter-h1 {
@@ -1401,7 +1448,7 @@ span {
     font-optical-sizing: auto;
     font-size: 56px;
     line-height: 110%;
-    font-weight: 500;
+    font-weight: 700;
   }
 }
 
@@ -1453,7 +1500,7 @@ b {
   font-optical-sizing: auto;
   font-size: 128px;
   line-height: 100%;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 240px;
 }
 @media screen and (max-width: 960px) {
@@ -1462,7 +1509,7 @@ b {
     font-optical-sizing: auto;
     font-size: 80px;
     line-height: 100%;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 144px;
   }
 }
@@ -1473,7 +1520,7 @@ b {
   font-optical-sizing: auto;
   font-size: 128px;
   line-height: 100%;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 144px;
 }
 @media screen and (max-width: 960px) {
@@ -1482,7 +1529,7 @@ b {
     font-optical-sizing: auto;
     font-size: 80px;
     line-height: 100%;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 96px;
   }
 }
@@ -1502,11 +1549,11 @@ b {
 }
 
 .t-2 {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace !important;
 }
 
 .f-m {
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .s-0 {
@@ -2169,6 +2216,18 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(3px);
 }
+.active-header .nav-link p {
+  color: #000000 !important;
+}
+.active-header .bx .line {
+  background: #000000 !important;
+}
+.active-header .icon::before {
+  background: #000000 !important;
+}
+.active-header .icon::after {
+  background: #000000 !important;
+}
 
 nav {
   max-width: 1440px;
@@ -2212,20 +2271,20 @@ nav {
   height: 52px;
   min-width: 52px;
   min-height: 52px;
-  z-index: 998;
   position: relative;
+  z-index: 998;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.08) 100%);
   backdrop-filter: blur(18px) saturate(180%);
   -webkit-backdrop-filter: blur(18px) saturate(180%);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.45), inset 0 -2px 4px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.18);
-  transition: transform 0.45s ease, box-shadow 0.45s ease, border-color 0.45s ease, background 0.45s ease;
+  transition: transform 0.45s ease, box-shadow 0.45s ease, background 0.45s ease, border-color 0.45s ease;
 }
 .bx:hover {
   transform: translateY(-2px) scale(1.05);
@@ -2262,13 +2321,24 @@ nav {
   transition: opacity 0.45s ease;
   pointer-events: none;
 }
-.bx span {
+.bx .icon {
   position: absolute;
   inset: 0;
   z-index: 2;
 }
-.bx span::before,
-.bx span::after {
+.bx .line {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  width: 40%;
+  height: 2px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.bx .icon::before,
+.bx .icon::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -2277,31 +2347,34 @@ nav {
   border-radius: 10px;
   background: #FFFFFF;
   transform: translateX(-50%);
-  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), top 0.45s cubic-bezier(0.22, 1, 0.36, 1), width 0.35s ease, opacity 0.35s ease;
+  transition: top 0.45s cubic-bezier(0.22, 1, 0.36, 1), transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
 }
-.bx span::before {
-  top: 45%;
+.bx .icon::before {
+  top: 38%;
 }
-.bx span::after {
-  top: 55%;
+.bx .icon::after {
+  top: 62%;
 }
 .bx.active-bx {
-  background: black !important;
   transform: rotate(180deg);
+  background: rgba(0, 0, 0, 0.92) !important;
+  border-color: rgba(255, 255, 255, 0.08);
 }
-.bx.active-bx .bx::before {
-  content: "";
-  background: black !important;
+.bx.active-bx::before {
+  opacity: 0;
 }
-.bx.active-bx .bx::after {
-  content: "";
-  background: black !important;
+.bx.active-bx::after {
+  opacity: 0;
 }
-.bx.active-bx span::before {
+.bx.active-bx .line {
+  opacity: 0;
+  transform: translate(-50%, -50%) scaleX(0);
+}
+.bx.active-bx .icon::before {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.bx.active-bx span::after {
+.bx.active-bx .icon::after {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -2440,7 +2513,7 @@ nav {
     font-optical-sizing: auto;
     font-size: 24px;
     line-height: 140%;
-    font-weight: 400;
+    font-weight: 700;
   }
 }
 .link-menu::after {
@@ -2506,7 +2579,13 @@ nav {
 
 .nav-link {
   display: inline-block;
-  color: #D9D9D9;
+}
+.nav-link a {
+  font-family: "Helvetica";
+  font-weight: 400;
+}
+.nav-link {
+  color: #FFFFFF;
   position: relative;
   transition: 0.7s ease;
   padding: 8px 16px;
@@ -2514,7 +2593,7 @@ nav {
   font-optical-sizing: auto;
   font-size: 24px;
   line-height: 150%;
-  font-weight: 400;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   .nav-link {
@@ -2522,7 +2601,7 @@ nav {
     font-optical-sizing: auto;
     font-size: 20px;
     line-height: 150%;
-    font-weight: 400;
+    font-weight: 500;
   }
 }
 .nav-link::after {
@@ -2540,6 +2619,10 @@ nav {
 .nav-link:hover::after {
   width: 90%;
   opacity: 1;
+}
+
+.link-active {
+  color: #000000 !important;
 }
 
 .logo-loader {
@@ -2693,7 +2776,7 @@ nav {
   font-optical-sizing: auto;
   font-size: 24px;
   line-height: 150%;
-  font-weight: 400;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   .btn {
@@ -2701,7 +2784,7 @@ nav {
     font-optical-sizing: auto;
     font-size: 20px;
     line-height: 150%;
-    font-weight: 400;
+    font-weight: 500;
   }
 }
 .btn::before {
@@ -2752,7 +2835,7 @@ nav {
   font-optical-sizing: auto;
   font-size: 24px;
   line-height: 150%;
-  font-weight: 400;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   .btn-dark {
@@ -2760,7 +2843,7 @@ nav {
     font-optical-sizing: auto;
     font-size: 20px;
     line-height: 150%;
-    font-weight: 400;
+    font-weight: 500;
   }
 }
 .btn-dark::before {

@@ -22,10 +22,20 @@ showMenu("bx", "menu");
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 /*==================================================================*/
 function scrollHeader() {
-  const nav = document.querySelector("header");
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if (nav && this.scrollY >= 200) nav.classList.add("active-header");
-  else if (nav) nav.classList.remove("active-header");
+  const header = document.querySelector("header");
+  const bx = document.querySelector(".bx");
+  const scrollPosition = window.scrollY;
+
+  if (bx.classList.contains("active-bx")) {
+    header.classList.remove("active-header");
+    return;
+  }
+
+  if (scrollPosition >= 400) {
+    header.classList.add("active-header");
+  } else {
+    header.classList.remove("active-header");
+  }
 }
 
 window.addEventListener("scroll", scrollHeader);
@@ -60,7 +70,6 @@ tl_menu.from(
 );
 
 menu_links.forEach((item) => {
-  // Quando clicar em algum link, o menu precisa recolher sempre, desativar.
   item.addEventListener("click", () => {
     nav.classList.remove("active-nav");
     bx.classList.remove("active-bx");
@@ -71,18 +80,12 @@ menu_links.forEach((item) => {
 });
 
 menu_links_icon.forEach((item) => {
-  // Quando clicar em algum link, o menu precisa recolher sempre, desativar.
   item.addEventListener("click", () => {
     nav.classList.remove("active-nav");
     bx.classList.remove("active-bx");
 
     tl_menu.reverse(2);
     menu.classList.remove("active-menu");
-
-    //point1.classList.remove('point-1-active');
-    //point2.classList.remove('point-2-active');
-    //point3.classList.remove('point-3-active');
-    //point4.classList.remove('point-4-active');
   });
 });
 
@@ -136,5 +139,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
-//ScrollTrigger.addEventListener("scrollStart", () => ScrollTrigger.refresh() );

@@ -809,6 +809,57 @@ canvas{
   
 }
 
+.card-service {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.service-1 {
+  width: 74px;
+  height: 74px;
+  background: url("../img/svg/sun.svg") center/contain no-repeat;
+  transition: ease .1s;
+
+  &:hover {
+    background: url("../img/gif/sun.gif") center/contain no-repeat;
+  }
+}
+
+.service-2 {
+  width: 74px;
+  height: 74px;
+  background: url("../img/svg/orings.svg") center/contain no-repeat;
+  transition: ease .1s;
+
+  &:hover {
+    background: url("../img/gif/orings.gif") center/contain no-repeat;
+  }
+}
+
+.service-3 {
+  width: 74px;
+  height: 74px;
+  background: url("../img/svg/geometry.svg") center/contain no-repeat;
+  transition: ease .1s;
+
+  &:hover {
+    background: url("../img/gif/geometry.gif") center/contain no-repeat;
+  }
+}
+
+.service-4 {
+  width: 74px;
+  height: 74px;
+  background: url("../img/svg/square.svg") center/contain no-repeat;
+  transition: ease .1s;
+
+  &:hover {
+    background: url("../img/gif/square.gif") center/contain no-repeat;
+  }
+}
+
 .card-s {
   padding: 6rem 5rem;
   border-radius: 1.6rem;
