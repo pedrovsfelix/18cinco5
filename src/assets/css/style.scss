@@ -28,7 +28,7 @@ body{
     width: 100%;
     max-width: 100%;
     overflow-x: clip;
-    background-color: $white-normal;
+    background-color: $white-dark;
 
     &::-webkit-scrollbar{
         padding-right: 0px;
@@ -92,4 +92,8 @@ svg,img{
 
 .white {
     color: $white-dark;
+}
+
+.stretch {
+    height: stretch;
 }

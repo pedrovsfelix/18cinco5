@@ -1,9 +1,14 @@
 @use '../sass/colors' as *;
+@use '../sass/responsive' as *;
 
 .logo-loader {
     position: relative;
     width: 500px;
     overflow: hidden;
+
+    @include responsive(s) {
+        width: 250px;
+    }
 }
 
 .logo {
