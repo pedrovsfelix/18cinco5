@@ -6,13 +6,14 @@
 
 @font-face {
   font-family: "Helvetica";
-  src: url("../../font/HelveticaNeueMedium.otf");
+  src: url("../font/HelveticaNeueMedium.otf");
+  // font-display: swap;
 }
 
 @mixin typeface-1($size, $device: desktop) {
 
   font-family: "Helvetica", sans-serif !important;
-  font-optical-sizing: auto;
+  // font-optical-sizing: auto;
   
   @if $size == h0 and $device == desktop {
     font-size: 128px;
@@ -329,6 +330,7 @@ p {
 .bold {
   font-weight: 900;
   color: $black-dark;
+  display: inline;
 }
 
 span{

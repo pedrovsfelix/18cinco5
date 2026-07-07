@@ -1,5 +1,6 @@
 @use 'colors' as *;
 @use 'responsive' as *;
+@use 'spacing' as *;
 
 .carousel {
   width: 100%;
@@ -44,7 +45,8 @@
     margin: 0 auto;
 
     @include responsive(s) {
-      max-width: 56px;
+      max-width: 72px;
+      padding: $gap-1 !important;
     }
 
     img {
