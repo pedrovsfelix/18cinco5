@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 .grid-1 {
   width: calc(8.3333333333% - 20px);
   margin: 10px;
@@ -1155,28 +1154,54 @@ canvas {
 
 @font-face {
   font-family: "Helvetica";
-  src: url("../font/HelveticaNeueMedium.otf");
+  src: url("../font/HelveticaNeueLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../font/HelveticaNeueMedium.otf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../font/RobotoMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("../font/RobotoMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 .h0 {
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 128px;
   line-height: 100%;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   .h0 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 80px;
     line-height: 100%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 @media screen and (max-width: 620px) {
   .h0 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 64px;
     line-height: 100%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -1184,54 +1209,61 @@ h1 {
   color: #1A1A1A;
   z-index: 5;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 72px;
   line-height: 110%;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   h1 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 56px;
     line-height: 110%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 @media screen and (max-width: 620px) {
   h1 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 44px;
     line-height: 120%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
 h2 {
   color: #1A1A1A;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 64px;
   line-height: 110%;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   h2 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 52px;
     line-height: 120%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 @media screen and (max-width: 620px) {
   h2 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 40px;
     line-height: 120%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
 h3 {
   color: #1A1A1A;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 56px;
   line-height: 120%;
   font-weight: 500;
@@ -1239,6 +1271,7 @@ h3 {
 @media screen and (max-width: 960px) {
   h3 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 48px;
     line-height: 120%;
     font-weight: 500;
@@ -1247,6 +1280,7 @@ h3 {
 @media screen and (max-width: 620px) {
   h3 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 32px;
     line-height: 130%;
     font-weight: 500;
@@ -1256,46 +1290,52 @@ h3 {
 h4 {
   color: #1A1A1A;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 40px;
   line-height: 120%;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   h4 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 32px;
     line-height: 130%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 @media screen and (max-width: 620px) {
   h4 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 24px;
     line-height: 140%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
 h5 {
   color: #1A1A1A;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 28px;
   line-height: 140%;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   h5 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 24px;
     line-height: 140%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
 h6 {
   color: #1A1A1A;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 24px;
   line-height: 150%;
   font-weight: 500;
@@ -1303,6 +1343,7 @@ h6 {
 @media screen and (max-width: 960px) {
   h6 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 20px;
     line-height: 150%;
     font-weight: 500;
@@ -1311,16 +1352,18 @@ h6 {
 
 .h7 {
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 18px;
   line-height: 150%;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   .h7 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 16px;
     line-height: 150%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -1474,16 +1517,18 @@ span {
   letter-spacing: 1px;
   text-transform: none;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 72px;
   line-height: 110%;
-  font-weight: 700;
+  font-weight: 500;
 }
 @media screen and (max-width: 960px) {
   .letter-h1 {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 56px;
     line-height: 110%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 
@@ -1532,17 +1577,19 @@ b {
 .h-xl {
   color: #000000;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 128px;
   line-height: 100%;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 240px;
 }
 @media screen and (max-width: 960px) {
   .h-xl {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 80px;
     line-height: 100%;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 144px;
   }
 }
@@ -1550,17 +1597,19 @@ b {
 .h-l {
   color: #000000;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 128px;
   line-height: 100%;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 144px;
 }
 @media screen and (max-width: 960px) {
   .h-l {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 80px;
     line-height: 100%;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 96px;
   }
 }
@@ -1585,6 +1634,10 @@ b {
 
 .f-m {
   font-weight: 400 !important;
+}
+
+.f-r {
+  font-weight: 300;
 }
 
 .s-0 {
@@ -2533,6 +2586,7 @@ nav {
   position: relative;
   transition: 0.7s ease;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 56px;
   line-height: 120%;
   font-weight: 500;
@@ -2540,9 +2594,10 @@ nav {
 @media screen and (max-width: 960px) {
   .link-menu {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 24px;
     line-height: 140%;
-    font-weight: 700;
+    font-weight: 500;
   }
 }
 .link-menu::after {
@@ -2619,6 +2674,7 @@ nav {
   transition: 0.7s ease;
   padding: 8px 16px;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 24px;
   line-height: 150%;
   font-weight: 500;
@@ -2626,6 +2682,7 @@ nav {
 @media screen and (max-width: 960px) {
   .nav-link {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 20px;
     line-height: 150%;
     font-weight: 500;
@@ -2805,6 +2862,7 @@ nav {
   position: relative;
   transition: 0.7s ease;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 24px;
   line-height: 150%;
   font-weight: 500;
@@ -2812,6 +2870,7 @@ nav {
 @media screen and (max-width: 960px) {
   .btn {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 20px;
     line-height: 150%;
     font-weight: 500;
@@ -2862,6 +2921,7 @@ nav {
   position: relative;
   transition: 0.7s ease;
   font-family: "Helvetica", sans-serif !important;
+  font-optical-sizing: auto;
   font-size: 24px;
   line-height: 150%;
   font-weight: 500;
@@ -2869,6 +2929,7 @@ nav {
 @media screen and (max-width: 960px) {
   .btn-dark {
     font-family: "Helvetica", sans-serif !important;
+    font-optical-sizing: auto;
     font-size: 20px;
     line-height: 150%;
     font-weight: 500;
