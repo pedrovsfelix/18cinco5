@@ -144,6 +144,8 @@
 @mixin typeface-2($size: p2, $device: desktop) {
   font-family: "Helvetica", sans-serif;
   font-optical-sizing: auto;
+  // word-break: break-all;
+  // text-align: left;
 
   @if $size == p1 and $device == desktop {
     font-size: 28px;
@@ -302,7 +304,7 @@ p {
 
 .uppercase{
   text-transform: uppercase;
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
 }
 
 .p1 {

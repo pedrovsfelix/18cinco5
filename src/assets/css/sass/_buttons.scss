@@ -7,9 +7,13 @@
   color: $white-light;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
   transition: .6s ease;
-  padding: 18px 80px 18px 20px;
+  padding: 18px 126px 18px 20px;
   text-align: left;
   text-transform: uppercase;
+  font-family: "Roboto Mono", monospace !important;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: -7%;
 
   position: relative;
   
@@ -23,16 +27,16 @@
   position: relative;
   transition: .7s ease;
 
-  @include typeface-1(h6, desktop);
   @include responsive(s) {
-    @include typeface-1(h6, mobile);
+    padding: 18px 76px 18px 20px;
+    font-size: 17px;
   }
 
   &::before{
     content: '';
     position: absolute;
     top: 50%;
-    left: 84%;
+    left: 86%;
 
     border-radius: 100%;
 
@@ -56,10 +60,10 @@
     &::before{
       transform: translate(-25%, -50%) rotate(360deg);
       top: 50%;
-      right: 84%;
+      right: 86%;
     }
 
-    padding: 18px 80px 18px 20px;
+    padding: 18px 126px 18px 20px;
     border: 3px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 72px 0 rgba(0, 0, 0, 0.6);
 
@@ -71,10 +75,14 @@
   color: $white-light;
   text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
   transition: .6s ease;
-  padding: 18px 80px 18px 20px;
+  padding: 18px 88px 18px 20px;
   text-align: left;
   text-transform: uppercase;
-
+  font-family: "Roboto Mono", monospace !important;
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: -7%;
+  
   position: relative;
   
   background-color: $black-darken;
@@ -86,16 +94,16 @@
   position: relative;
   transition: .7s ease;
 
-  @include typeface-1(h6, desktop);
   @include responsive(s) {
-    @include typeface-1(h6, mobile);
+    padding: 18px 88px 18px 20px;
+    font-size: 17px;
   }
 
   &::before{
     content: '';
     position: absolute;
     top: 50%;
-    left: 84%;
+    left: 81%;
 
     border-radius: 100%;
 
@@ -126,11 +134,11 @@
         transform: translate(-25%, -50%);
       }
       top: 50%;
-      right: 84%;
+      right: 81%;
     }
 
     background-color: $black-light;
-    padding: 18px 80px 18px 20px;
+    padding: 18px 88px 18px 20px;
     border: 3px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 72px 0 rgba(0, 0, 0, 0.6);
   }

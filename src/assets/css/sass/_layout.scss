@@ -949,6 +949,7 @@ canvas{
   height: 17rem;
   display: flex;
   flex-direction: column;
+  gap: 0.75rem;
   .btn-dark {
     width: max-content;
   }
@@ -1036,4 +1037,12 @@ canvas{
             width: 100%;
         }
     }
+}
+
+.grid-disapear {
+  width: calc(33.3333333333% - 0px) !important;
+}
+
+.mx {
+  width: max-content;
 }
